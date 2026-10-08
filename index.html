@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f5f1">
+  <meta name="description" content="MST — Mister Technology Society. Tecnología útil, productos seleccionados y precios en pesos chilenos.">
+  <title>MST — Mister Technology Society</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="catalog.css">
+  <link rel="stylesheet" href="details.css">
+  <link rel="stylesheet" href="brand.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="status-dot"></span> Envíos a todo Chile <span class="announce-divider">/</span> Compra segura</div>
+  <header class="site-header">
+    <a class="wordmark brand-lockup" href="index.html#inicio" aria-label="MST, Mister Technology Society, ir al inicio"><span class="logo-placeholder" aria-hidden="true">TU LOGO</span><span class="brand-type">MST<span>.</span><small>MISTER TECHNOLOGY SOCIETY</small></span></a>
+    <form class="site-search" id="site-search" role="search" autocomplete="off"><label class="visually-hidden" for="site-search-input">Buscar productos MST</label><input id="site-search-input" type="search" placeholder="Buscar productos..." aria-label="Buscar productos MST" aria-controls="search-suggestions" aria-expanded="false"><button type="submit" aria-label="Buscar">⌕</button><div class="search-suggestions" id="search-suggestions" role="listbox" hidden></div></form>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="productos.html">Explorar</a><a href="index.html#nosotros">Nosotros</a><a href="pago.html">Mi pedido</a></nav>
+    <div class="header-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activar tema oscuro" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span><span id="theme-label">Oscuro</span></button><button class="cart-trigger" id="open-cart" type="button" aria-label="Abrir carrito"><span>Carrito</span><span class="cart-count" id="cart-count">0</span></button></div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>01</span> MISTER TECHNOLOGY SOCIETY</p>
+        <h1>La tecnología<br>que te <span>conecta.</span></h1>
+        <p class="hero-description">Accesorios inteligentes y tecnología útil, seleccionados para hacer más simple tu día.</p>
+        <a class="button button-dark" href="productos.html">Explorar productos <span aria-hidden="true">↘</span></a>
+        <div class="hero-meta"><span class="meta-mark">CL</span><span>Precios en pesos chilenos<br>Despacho a todo Chile</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Espacio reservado para imagen principal">
+        <div class="visual-grid"></div><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-core"><span>MST</span></div>
+        <div class="visual-label"><span class="status-dot"></span> SEÑAL ACTIVA <span class="label-coordinate">33° 26' S</span></div>
+        <span class="image-note">IMAGEN PRINCIPAL<br>POR AGREGAR</span><span class="visual-index">MISTER TECHNOLOGY SOCIETY / CL</span>
+      </div>
+    </section>
+    <section class="about-band" id="nosotros">
+      <div class="about-inner"><p class="eyebrow"><span>02</span> MISTER TECHNOLOGY SOCIETY</p><div class="about-content"><h2>Menos ruido.<br>Más conexión.<br><span>Más MST.</span></h2><p>Seleccionamos tecnología confiable y fácil de usar. Una comunidad para quienes quieren estar mejor conectados, sin complicarse.</p></div><div class="about-foot"><span>MST / CHILE</span><span>MISTER TECHNOLOGY SOCIETY</span></div></div>
+    </section>
+    <section class="order-prompt">
+      <div class="order-prompt-inner"><div><p class="eyebrow"><span>03</span> TU COMPRA</p><h2>¿Encontraste lo que buscabas?</h2><p>Revisa tu carrito y completa tus datos en la página de pedido.</p></div><a class="button button-dark" href="pago.html">Ir a mi pedido <span aria-hidden="true">→</span></a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark footer-brand" href="#inicio">MST<span>.</span><small>MISTER TECHNOLOGY SOCIETY</small></a><span>TECNOLOGÍA QUE TE CONECTA.</span><a href="#inicio">Volver arriba ↑</a><span>© 2026 MST</span></footer>
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">TU SELECCIÓN / MST</p><h2 id="cart-title">Carrito <span id="drawer-count">(0)</span></h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span class="empty-symbol">↗</span><p>Tu carrito está vacío.</p><a href="productos.html" id="browse-products">Descubrir productos</a></div>
+    <div class="drawer-footer" id="drawer-footer" hidden><div class="shipping-progress" id="shipping-progress" hidden><p id="shipping-progress-message"></p><div class="shipping-progress-bar" id="shipping-progress-bar" role="progressbar" aria-label="Progreso para obtener envío gratis" aria-valuemin="0" aria-valuemax="60000" aria-valuenow="0"><span id="shipping-progress-fill"></span></div></div><div class="cart-totals"><div class="subtotal-row"><span>Subtotal neto</span><strong id="cart-subtotal">$0</strong></div><div class="tax-row"><span>IVA (19%)</span><strong id="cart-iva">$0</strong></div><div class="final-total-row"><span>Total con IVA</span><strong id="cart-total">$0</strong></div></div><p id="cart-shipping-note"></p><a class="button button-dark checkout-link" href="pago.html" id="checkout-link">Ir a pagar <span aria-hidden="true">→</span></a></div>
+  </aside>
+</body>
+</html>
